@@ -38,7 +38,7 @@ COPY src/abstention_model ./src/abstention_model
 
 # The trained clean-subset classifier this service serves. Regenerate via
 # scripts/train_clean_subset.py if it's missing or stale at build time.
-COPY api/model.joblib ./model.joblib
+COPY api/model.joblib ./api/model.joblib
 
 WORKDIR /app/api
 
