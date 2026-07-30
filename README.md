@@ -179,4 +179,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Author
 
-**Shivansh** — [GitHub](https://github.com/Shivansh1205) · [LinkedIn](https://linkedin.com/in/your-profile)
+**Shivansh** — [GitHub](https://github.com/Shivansh1205) · [LinkedIn](https://www.linkedin.com/in/shivanshbhageria2005/)
