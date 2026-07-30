@@ -24,8 +24,7 @@ have a real answer get caught instead of hallucinated.
 
 🔗 **[Live Demo](https://site-taahknc89-shivanshs-projects-64404921.vercel.app)** — try it with your own questions
 
-![Demo screenshot placeholder](docs/assets/demo-screenshot.png)
-_Screenshot coming soon once the live demo is deployed — see [site/](site/) to run it locally in the meantime._
+![Demo screenshot](docs/assets/demo-screenshot.png)
 
 ## Quickstart
 
