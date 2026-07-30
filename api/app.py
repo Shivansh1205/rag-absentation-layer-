@@ -153,15 +153,10 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="RAG Abstention Layer API", lifespan=lifespan)
 
-origins = os.environ.get("ALLOWED_ORIGINS", "*")
-if origins == "*":
-    allow_origins = ["*"]
-else:
-    allow_origins = [o.strip() for o in origins.split(",")]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allow_origins,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
