@@ -1,3 +1,6 @@
+# Local dev batch files (machine-specific workarounds, not part of the project)
+*.bat
+
 __pycache__/
 *.pyc
 .venv/

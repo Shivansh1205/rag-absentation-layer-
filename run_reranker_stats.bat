@@ -1,3 +1,0 @@
-@echo off
-cd /d c:\Users\LENOVO\shivansh\RAGABS~1
-c:\Users\LENOVO\shivansh\RAGABS~1\.venv\Scripts\python.exe -c "import pandas as pd; pd.set_option('display.max_columns', None); pd.set_option('display.width', 200); df = pd.read_parquet('data/train_features.parquet'); print('=== reranker feature stats ==='); print(df[['reranker_max_score','reranker_mean_score']].describe()); print(); print('=== reranker by label ==='); print(df.groupby('label')[['reranker_max_score','reranker_mean_score']].mean()); print(); print('=== reranker by corruption_type ==='); print(df.groupby('corruption_type')[['reranker_max_score','reranker_mean_score']].mean())"
