@@ -80,10 +80,6 @@ MODEL_PATH = Path(
     or next((str(p) for p in _MODEL_PATH_CANDIDATES if p.exists()), str(_MODEL_PATH_CANDIDATES[0]))
 )
 
-# "*" is fine for local dev; set a comma-separated list (e.g.
-# "https://your-site.vercel.app,http://localhost:5173") in production.
-ALLOWED_ORIGINS = [o.strip() for o in os.environ.get("ALLOWED_ORIGINS", "*").split(",") if o.strip()]
-
 DEFAULT_THRESHOLD = 0.5
 
 
@@ -157,10 +153,15 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="RAG Abstention Layer API", lifespan=lifespan)
 
+origins = os.environ.get("ALLOWED_ORIGINS", "*")
+if origins == "*":
+    allow_origins = ["*"]
+else:
+    allow_origins = [o.strip() for o in origins.split(",")]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=False,
+    allow_origins=allow_origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
