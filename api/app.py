@@ -64,8 +64,21 @@ from abstention_model.features import (  # noqa: E402
     UNDEFINED_INDICATOR_COLUMN,
 )
 
-DEFAULT_MODEL_PATH = _REPO_ROOT / "artifacts" / "eval_clean_subset" / "model.joblib"
-MODEL_PATH = Path(os.environ.get("MODEL_PATH", str(DEFAULT_MODEL_PATH)))
+# Checked in this order: MODEL_PATH env var override, then api/model.joblib
+# (same directory as this file -- true both in Docker, where the image's
+# build context is api/ and model.joblib is COPYed alongside app.py, and in
+# local dev now that the model lives in the repo at api/model.joblib), then
+# the original artifacts/eval_clean_subset/model.joblib location (kept as a
+# fallback for anyone regenerating the model there via
+# scripts/train_clean_subset.py without having copied it into api/ yet).
+_MODEL_PATH_CANDIDATES = [
+    Path(__file__).resolve().parent / "model.joblib",
+    Path(__file__).resolve().parent.parent / "artifacts" / "eval_clean_subset" / "model.joblib",
+]
+MODEL_PATH = Path(
+    os.environ.get("MODEL_PATH")
+    or next((str(p) for p in _MODEL_PATH_CANDIDATES if p.exists()), str(_MODEL_PATH_CANDIDATES[0]))
+)
 
 # "*" is fine for local dev; set a comma-separated list (e.g.
 # "https://your-site.vercel.app,http://localhost:5173") in production.
