@@ -1,0 +1,4 @@
+@echo off
+set ROOT=c:\Users\LENOVO\shivansh\RAGABS~1
+set PY=%ROOT%\.venv\Scripts\python.exe
+%PY% -c "import pandas as pd; train = pd.read_parquet('data/train_features.parquet'); eval_ = pd.read_parquet('data/eval_features.parquet'); print('train shape:', train.shape); print('eval shape:', eval_.shape); print(); print('train label balance:'); print(train['label'].value_counts()); print(); print('train corruption_type balance:'); print(train['corruption_type'].value_counts()); print(); print('eval label balance:'); print(eval_['label'].value_counts()); print(); print('eval corruption_type balance:'); print(eval_['corruption_type'].value_counts()); print(); print('any NaN values in feature columns?'); print(train.isna().sum()); print(eval_.isna().sum()); print(); print('feature value ranges (sanity check):'); print(train.describe())"

@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+data/*.parquet
+!data/.gitkeep
+.ruff_cache/
+# Phase 3: generated model/evaluation artifacts (scripts/train_and_evaluate.py
+# writes to artifacts/eval/ by default; artifacts/ itself, not just eval/, is
+# ignored since Phase 4 tuning is expected to add its own artifacts/tune/ or
+# artifacts/final/ alongside it -- all of it is regenerable output, not source).
+artifacts/
+
+# Publish prep (Step 2): generated model weights, and site/ build
+# artifacts -- site/.gitignore and api/.gitignore already cover these
+# scoped to their own directories; listed again at the root as an
+# explicit, easy-to-audit statement of "nothing generated gets committed."
+*.joblib
+.env
+.env.local
+site/node_modules/
+site/dist/

@@ -1,0 +1,33 @@
+# RAG Abstention Layer -- live scoring API.
+#
+# Separate from the main project's pyproject.toml/uv.lock on purpose --
+# this is a standalone deployable service (Render/Railway/Fly.io), pinned
+# independently so changes to the main training/eval pipeline's deps never
+# silently change what's running in production here.
+#
+# Install:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+#   python -m spacy download en_core_web_sm
+#
+# The --extra-index-url is what makes `torch` resolve to the CPU-only
+# wheel instead of pulling the full CUDA stack (multi-GB, unused -- this
+# API never touches a GPU). Same reasoning as the main project's
+# pyproject.toml [tool.uv.sources] torch override, just expressed as a pip
+# flag instead of a uv index since this is a plain requirements.txt.
+
+fastapi>=0.111,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+joblib>=1.3
+pandas>=2.0
+
+# Must match the exact minor version artifacts/eval_clean_subset/model.joblib
+# was pickled with -- see the main project's pyproject.toml comment on this
+# exact risk (scikit-learn does not guarantee pickle compatibility across
+# minor versions). Re-pin here if that model is ever regenerated with a
+# different scikit-learn.
+scikit-learn>=1.9,<1.10
+
+sentence-transformers>=3.0
+spacy>=3.7
+torch>=2.0

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "ex_1",
+    "question": "Maggie May is a musical based on a folk song about a prostitute who robbed whom?",
+    "chunks": [
+      "George Washington Johnson died in 1917. The schoolhouse where the two lovers met still stands on the...",
+      "He then went on to play leading roles in \"No Sex Please, We're British\", \"Billy\", \"What's a Nice Cou...",
+      "\"Maggie May\" (or \"Maggie Mae\") (Roud 1757) is a traditional Liverpool folk song about a prostitute w...",
+      "They were married in 1864 but Maggie's health deteriorated and she died on May 12, 1865. James Austi...",
+      "The original Australian production played in Melbourne in 2004 at Her Majesty's Theatre. It was nomi..."
+    ],
+    "label": 1,
+    "corruption_type": "gold_included",
+    "confidence_score": 1.0,
+    "correct_answer": "A \"homeward bounder\" — a sailor returning home from a round trip.",
+    "hallucinated_answer": null
+  },
+  {
+    "id": "ex_2",
+    "question": "How many rooms does that largest single hotel within the United States that is owned by MGM Resorts International?",
+    "chunks": [
+      "It is owned and operated by MGM Resorts International. The hotel offers 2,992 guest rooms, including...",
+      "He also oversees Beau Rivage (Mississippi) in Biloxi and Gold Strike Tunica, both in Mississippi, as...",
+      "The casino hotel features 2,002 rooms and is the largest hotel in New Jersey. Borgata opened in July...",
+      "The MGM Grand is the largest single hotel in the United States with 5,124 rooms. It is also the thir...",
+      "Mirage Resorts (formerly Golden Nugget Companies) was an American company that owned and operated ho..."
+    ],
+    "label": 1,
+    "corruption_type": "gold_included",
+    "confidence_score": 1.0,
+    "correct_answer": "5,124 rooms (the MGM Grand).",
+    "hallucinated_answer": null
+  },
+  {
+    "id": "ex_3",
+    "question": "What is the name of the popular shopping destination located close to the Taj Mahal and Agra Fort in India?",
+    "chunks": [
+      "Sadar Bazaar is one of the most popular shopping destinations for the tourist visiting Agra. It is l...",
+      "Taj Mahal Bangladesh (Bengali: তাজ মহল বাংলাদেশ )is a scaled copy of the original Taj Mahal (a Mugha...",
+      "Agra Fort Railway Station, is located near Agra Fort, in Rawatpara, Agra. It used to be one of the s...",
+      "It was the main residence of the emperors of the Mughal Dynasty till 1638, when the capital was shif...",
+      "Taj Mahal or Mini Taj Mahal or Qadri's Taj Mahal, officially known as Maqbara Yadgare Mohabbat Tajam..."
+    ],
+    "label": 1,
+    "corruption_type": "gold_included",
+    "confidence_score": 1.0,
+    "correct_answer": "Sadar Bazaar.",
+    "hallucinated_answer": null
+  },
+  {
+    "id": "ex_4",
+    "question": "Van Andel Institute was founded in part by what American businessman, who was best known as co-founder of the Amway Corporation?",
+    "chunks": [
+      "VAEI offers various science education programs for students K-12, professional development for scien...",
+      "Together, they form the Office of the Chief Executive. DeVos is the youngest son of Helen June (Van...",
+      "Jay Van Andel (June 3, 1924 – December 7, 2004) was an American businessman, best known as co-founde...",
+      "Alticor is an American corporation, privately owned and run by American families of DeVos and Van An...",
+      "After the launch of Amway Global (originally operating under the name Quixtar) it replaced the Amway..."
+    ],
+    "label": 1,
+    "corruption_type": "gold_included",
+    "confidence_score": 1.0,
+    "correct_answer": "Jay Van Andel.",
+    "hallucinated_answer": null
+  },
+  {
+    "id": "ex_5",
+    "question": "The star of \"Lady in a Cage\" was born in what year?",
+    "chunks": [
+      "She married Sir Alexander MacRobert, a wealthy self-made Scottish millionaire, and had three sons wi...",
+      "Grier is also known for her work on television; for 6 seasons she portrayed Kate 'Kit' Porter on the...",
+      "She first married Sir Richard Worsley, who was the captain of the Isle of Wight. After his death, sh...",
+      "Wagner Jr. defend the AAA Mega Championship against El Mesias in a \"Domo De La Muerte\" cage match. T...",
+      "The following year, her two sons by Worsley, John and George, were killed along with others in an ac..."
+    ],
+    "label": 0,
+    "corruption_type": "distractor_only",
+    "confidence_score": 0.04,
+    "correct_answer": null,
+    "hallucinated_answer": "The star of \"Lady in a Cage\" was born in 1949."
+  },
+  {
+    "id": "ex_6",
+    "question": "Where did Ian Harland study prior to studying at the oldest college at the University of Cambridge?",
+    "chunks": [
+      "The foundation stone was laid by Sir Leslie Orme Wilson, Governor of Bombay in 1924. The vision of f...",
+      "Ismail Yusuf College, is the fourth oldest college of Mumbai, India. \"I Y college\", as it is popular...",
+      "Its first football game took place on October 7, 1893, a 6-0 Mines victory over the University of De...",
+      "U.S. News also ranks it as the best global university for environment and ecology.",
+      "It is one \"A\" College under NAAC ranking and is rated 5-star. It is also one of the nine colleges in..."
+    ],
+    "label": 0,
+    "corruption_type": "distractor_only",
+    "confidence_score": 0.04,
+    "correct_answer": null,
+    "hallucinated_answer": "Ian Harland studied at Ismail Yusuf College before going on to study at the University of Cambridge."
+  },
+  {
+    "id": "ex_7",
+    "question": "At which university does the biographer of John Clare teach English Literature?",
+    "chunks": [
+      "The CMS College (CMS College Kottayam) is one of the first Western-style college in India. CMS Colle...",
+      "In September 2004, it was registered as an Independent Non-Government Organisation in Vietnam. In 20...",
+      "Wikipedia says: The college has its origins in a village-church school founded in 1809 at Mylaudy by...",
+      "Joseph Laurent (1839-1917) was chief of the Abenaki village of Odanak in Quebec, Canada, from 1880 t...",
+      "He left school at 16 and began work as a saddlemaker, an occupation that provides the backdrop for h..."
+    ],
+    "label": 0,
+    "corruption_type": "distractor_only",
+    "confidence_score": 0.04,
+    "correct_answer": null,
+    "hallucinated_answer": "The biographer of John Clare teaches English Literature at Birmingham Polytechnic."
+  },
+  {
+    "id": "ex_8",
+    "question": "What class of yamaha class sport bike motorcycle did Ryuji Yokoa use when he finished as champion in the MFJ All Japan Road Race GP250 Championship in 2006?",
+    "chunks": [
+      "He has also competed in the MFJ All Japan JSB1000 Championship, the MFJ All Japan Road Race GP250 Ch...",
+      "Kazuki Watanabe (渡辺 一樹 , Watanabe Kazuki , born 2 October 1990) is a Japanese motorcycle racer. In 2...",
+      "Honda team. Takahashi has also competed in the MFJ All Japan Road Race GP125 Championship and the MF...",
+      "He has also competed in the MFJ All Japan Road Race GP250 Championship, the MFJ All Japan Road Race...",
+      "Takumi Takahashi (高橋 巧 , Takahashi Takumi , born 26 November 1989) is a Japanese motorcycle racer. H..."
+    ],
+    "label": 0,
+    "corruption_type": "distractor_only",
+    "confidence_score": 0.06,
+    "correct_answer": null,
+    "hallucinated_answer": "Ryuji Yokoa rode a Kawasaki ZX-6R to the championship in 2006."
+  }
+]

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-feature-settings: "cv11", "ss01";
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Subtle glow used behind the hero + section headers. */
+.bg-glow {
+  background: radial-gradient(
+    60% 60% at 50% 0%,
+    rgba(26, 177, 115, 0.16) 0%,
+    rgba(2, 6, 23, 0) 70%
+  );
+}
