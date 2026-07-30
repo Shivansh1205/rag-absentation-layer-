@@ -27,7 +27,7 @@ export default function App() {
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
           <span>RAG Abstention Layer &mdash; a portfolio project.</span>
           <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="hover:text-brand-400">
-            github.com/your-username/rag-abstention
+            {GITHUB_URL.replace(/^https?:\/\//, "")}
           </a>
         </div>
       </footer>

@@ -22,7 +22,7 @@ have a real answer get caught instead of hallucinated.
 
 ## Demo
 
-🔗 **[Live Demo](https://your-deployment-url.example.com)** — try it with your own questions
+🔗 **[Live Demo](https://site-taahknc89-shivanshs-projects-64404921.vercel.app)** — try it with your own questions
 
 ![Demo screenshot placeholder](docs/assets/demo-screenshot.png)
 _Screenshot coming soon once the live demo is deployed — see [site/](site/) to run it locally in the meantime._
@@ -180,4 +180,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Author
 
-**Shivansh** — [GitHub](https://github.com/your-username) · [LinkedIn](https://linkedin.com/in/your-profile)
+**Shivansh** — [GitHub](https://github.com/Shivansh1205) · [LinkedIn](https://linkedin.com/in/your-profile)
