@@ -22,7 +22,7 @@ have a real answer get caught instead of hallucinated.
 
 ## Demo
 
-🔗 **[Live Demo](https://site-taahknc89-shivanshs-projects-64404921.vercel.app)** — try it with your own questions
+🔗 **[Live Demo](https://site-pi-jade-63.vercel.app/)** — try it with your own questions
 
 ![Demo screenshot](docs/assets/demo-screenshot.png)
 
